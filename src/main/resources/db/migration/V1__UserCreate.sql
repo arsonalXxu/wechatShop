@@ -4,6 +4,6 @@ create table USER(
     NAME varchar(100) not null ,
     TEL varchar(20) unique ,
     AVATAR_URL varchar(1024),
-    CREATED_AT timestamp,
-    UPDATED_AT timestamp
+    CREATED_AT datetime,
+    UPDATED_AT datetime
 );
