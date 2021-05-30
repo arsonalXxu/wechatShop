@@ -1,9 +1,8 @@
 package org.arsonal.wechatShop.generate;
 
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.arsonal.wechatShop.generate.User;
-import org.arsonal.wechatShop.generate.UserExample;
+
+import java.util.List;
 
 public interface UserMapper {
     /**

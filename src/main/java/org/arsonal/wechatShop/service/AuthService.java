@@ -1,6 +1,5 @@
 package org.arsonal.wechatShop.service;
 
-import org.arsonal.wechatShop.generate.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,7 @@ public class AuthService {
 
 
     public void sendVerificationCode(String tel) {
-        User user = userService.createUserIfNotExist(tel);
+        userService.createUserIfNotExist(tel);
         final String correctCode = smsCodeService.sendSmsCode(tel);
         verificationCodeCheckService.addCode(tel, correctCode);
     }
