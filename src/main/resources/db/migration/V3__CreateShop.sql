@@ -1,10 +1,10 @@
--- 电话请用字符串，id用long会报错请用bigint
-create table USER(
+create table SHOP(
     ID bigint primary key auto_increment,
-    NAME varchar(100) not null ,
-    TEL varchar(20) unique ,
-    AVATAR_URL varchar(1024),
-    ADDRESS varchar (1024),
+    NAME varchar(100),
+    DESCRIPTION varchar(1024),
+    IMG_URL varchar(1024),
+    OWNER_USER_ID bigint,
+    STATUS varchar(16),
     CREATED_AT timestamp not null default now(),
     UPDATED_AT timestamp not null default now()
 ) ENGINE = InnoDB
